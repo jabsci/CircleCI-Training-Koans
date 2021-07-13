@@ -33,5 +33,4 @@ workflows:
             - test
           filters:
             tags:
-              only:
-                - /^beta-*-[0-9].[0-9].[0-9]/
+              only: /^beta-*-[0-9]\.[0-9]\.[0-9]/
