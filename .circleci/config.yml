@@ -46,9 +46,9 @@ jobs:
         - image: node
       steps:
         - attach_workspace:
-            at: <location>
+            at: workspace
         - store_artifacts: # See circleci.com/docs/2.0/artifacts/ for more details.
-            path: app
+            path: ~/project/workspace/project/app
             destination: apps
 
 workflows:
