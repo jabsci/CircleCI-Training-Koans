@@ -14,7 +14,7 @@ commands:
         default: "~/randomfolder"
     steps:
       - run: echo "Log file" > <<parameters.path>>/log.txt
-  endMission:
+  endmission:
     description: "Use the parameters of this command to exit this mission with a green build."
     parameters:
       exitCode:
@@ -28,7 +28,8 @@ jobs:
     executor: custom-node
     steps:
       - run: echo "console.log('complete')" | node
-      - generatelogs
+      - generatelogs:
+          path: "~/project"
       - run:
           name: Check for logs - DO NOT MODIFY
           command: |
@@ -36,7 +37,8 @@ jobs:
               echo "The log should exist at ~/project/log.txt after running the 'generatelogs' command"
               exit 1
             fi
-      - endMission
+      - endmission:
+          exitCode: 0
 
 workflows:
   version: 2
