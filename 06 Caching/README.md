@@ -22,7 +22,7 @@ Stored Cache to yarn-packages-v1-qwa_N++0aXeaXlpPu1TzrRMKJU1V7n3NYN+0BxBVg20=
 - Push another commit and confirm the cache is restored/used (should see something like this):
 
 ```
-Found a cache from build 44 at yarn-packages-qwa_N++0aXeaXlpPu1TzrRMKJU1V7n3NYN+0BxBVg20=
+Found a cache from build 44 at yarn-packages-v1-qwa_N++0aXeaXlpPu1TzrRMKJU1V7n3NYN+0BxBVg20=
 Size: 160 B
 Cached paths:
   * /home/circleci/.cache/yarn
@@ -38,7 +38,9 @@ Unarchiving cache...
 **Help:**
 <details>
   <summary>Spoiler warning</summary>
-  https://circleci.com/docs/2.0/caching/
-  https://circleci.com/docs/2.0/yarn/#caching
-  https://circleci.com/docs/2.0/caching/#clearing-cache
+
+  * https://circleci.com/docs/2.0/caching/
+  * https://circleci.com/docs/2.0/yarn/#caching
+  * https://circleci.com/docs/2.0/caching/#clearing-cache
+  
 </details>
